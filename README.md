@@ -1,1 +1,3 @@
-README
+# README
+
+Making an automated channel
