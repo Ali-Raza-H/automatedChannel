@@ -1,0 +1,38 @@
+{
+  "schema_version": 2,
+  "name": "content",
+  "display_name": "Brainrot Content Automation",
+  "description": "Filesystem-first Python pipeline for generating, rendering, validating, and optionally uploading short-form videos.",
+  "type": "python",
+  "category": "automation",
+  "stage": "inProgress",
+  "environment": {
+    "type": "python-venv",
+    "mode": "shared",
+    "name": "automation/contentAutomation",
+    "path": "/home/aliraza/Devs/.venvManager/automation/contentAutomation/"
+  },
+  "commands": {
+    "run": "python main.py",
+    "generate": "python main.py generate",
+    "generate_once": "python main.py generate-once",
+    "status": "python main.py status",
+    "validate": "python main.py validate",
+    "install": "python -m pip install -r requirements.txt",
+    "test": "python -m pytest -q",
+    "doctor": "python -m pip check && python -m py_compile main.py core/*.py"
+  },
+  "git": {
+    "enabled": true
+  },
+  "tags": [
+    "python",
+    "automation",
+    "youtube",
+    "tiktok",
+    "ffmpeg",
+    "tui"
+  ],
+  "created_at": "2026-08-13",
+  "updated_at": "2026-08-29"
+}
