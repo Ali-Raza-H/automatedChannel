@@ -1,0 +1,27 @@
+app:
+  name: Brainrot Generator
+  log_level: INFO
+pipeline:
+  background_pool_size: 2
+  poll_interval_seconds: 5
+  stale_job_timeout_minutes: 30
+video:
+  width: 1080
+  height: 1920
+  fps: 30
+  target_duration_seconds: 75
+  min_duration_seconds: 60
+  max_duration_seconds: 90
+story:
+  target_words: 185
+  min_words: 150
+  max_words: 230
+  genders:
+    male:
+      enabled: true
+    female:
+      enabled: true
+development:
+  mock_external_services: true
+upload:
+  enabled: false
